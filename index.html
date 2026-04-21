@@ -2,61 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Erwing Augustin | CS Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erwing Augustin | CS Capstone Portfolio</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 20px; }
-        nav { background: #333; padding: 10px; }
-        nav a { color: white; margin-right: 15px; text-decoration: none; }
-        section { margin-top: 30px; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 1000px; margin: 0 auto; padding: 20px; background-color: #f4f4f9; }
+        header { background: #002347; color: white; padding: 2rem; text-align: center; border-radius: 8px; margin-bottom: 30px; }
+        nav { display: flex; justify-content: center; gap: 20px; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        nav a { text-decoration: none; color: #002347; font-weight: bold; }
+        .content-box { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        h2 { color: #002347; border-bottom: 2px solid #002347; padding-bottom: 10px; }
+        h3 { color: #0056b3; margin-top: 25px; }
+        .reflection-note { background: #e7f3ff; border-left: 5px solid #2196F3; padding: 15px; font-style: italic; margin: 20px 0; }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Erwing Augustin - Computer Science Portfolio</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#software-engineering">Software Engineering</a>
-            <a href="#algorithms">Algorithms</a>
-            <a href="#databases">Databases</a>
-        </nav>
-    </header>
+<header>
+    <h1>Erwing Augustin</h1>
+    <p>BS in Computer Science | Software Engineer</p>
+</header>
 
-    <section id="self-assessment">
-        <h2>Professional Self-Assessment</h2>
-        <p>
-            I have been in the Computer Science program for 3 years, focusing on full-stack development, 
-            machine learning, and mobile architecture [cite: 53, 56-60]. My goal is to work in Software 
-            Engineering with a focus on AI integration or Mobile Development[cite: 53, 64].
-        </p>
-        <p>
-            Throughout this program, I have developed a security mindset that anticipates adversarial 
-            exploits[cite: 53, 124]. This is demonstrated in my database enhancements where I 
-            implemented parameterized queries to prevent SQL injection[cite: 196, 206].
-        </p>
-    </section>
+<nav>
+    <a href="#assessment">Self-Assessment</a>
+    <a href="#engineering">Software Engineering</a>
+    <a href="#algorithms">Algorithms</a>
+    <a href="#databases">Databases</a>
+</nav>
 
-    <section id="code-review">
-        <h2>Code Review Video</h2>
-        <p><a href="YOUR_YOUTUBE_LINK_HERE">Watch my Milestone One Code Review</a></p>
-    </section>
-    <section>
-    <h2>Enhancement 1: Software Engineering</h2>
-    <p></p>
-    <a href="https://onedrive.live.com/personal/c0545d8be6125923/_layouts/15/doc.aspx?resid=3e25c0fe-d951-48e5-822c-27f1fa66d677&cid=c0545d8be6125923E">View Code</a>
-</section>
+<div id="assessment" class="content-box">
+    <h2>Professional Self-Assessment</h2>
+    <p>I have been in the Computer Science program for 3 years, mastering full-stack development, machine learning foundations, and mobile architecture. My goal is to work in Software Engineering with a focus on AI integration or Mobile Development.</p>
+    <p>Throughout this program, I have developed a security mindset that anticipates adversarial exploits. This portfolio demonstrates my ability to bridge high-level theory with functional, secure, and optimized software.</p>
+</div>
 
-<section>
-    <h2>Enhancement 2: Algorithms and Data Structures</h2>
-    <p></p>
-    <a href="https://onedrive.live.com/personal/c0545d8be6125923/_layouts/15/doc.aspx?resid=b9ec60fc-86b5-40d9-82a5-dfb0e7b9f089&cid=c0545d8be6125923">View Code</a>
-</section>
+<div id="engineering" class="content-box">
+    <h2>Artifact 1: Software Engineering & Design</h2>
+    <h3>Pirate Intelligent Agent (Deep Q-Learning)</h3>
+    <p><strong>Description:</strong> An autonomous agent using reinforcement learning to navigate mazes. Developed using Python, NumPy, and Keras/TensorFlow.</p>
+    <p><strong>Enhancement:</strong> I optimized the epsilon-decay strategy to recalibrate the exploration/exploitation trade-off, allowing for faster convergence once the environment was mapped. I also refactored the reward system to penalize repetitive "looping" behavior.</p>
+    <p><a href="https://github.com/ErwingAugustin/CS-370-Current-Emerging-Trends-in-CS-Pirate-Agent">View Repository</a></p>
+</div>
 
-<section>
-    <h2>Enhancement 3: Databases</h2>
-    <p></p>
-    <a href="https://onedrive.live.com/personal/c0545d8be6125923/_layouts/15/doc.aspx?resid=451454e9-3620-43d0-87da-600ad17df8f2&cid=c0545d8be6125923">View Code</a>
-</section>
+<div id="algorithms" class="content-box">
+    <h2>Artifact 2: Algorithms and Data Structures</h2>
+    <h3>Contact Management System</h3>
+    <p><strong>Description:</strong> A Java-based system for managing and validating contact information using JUnit testing suites.</p>
+    <p><strong>Enhancement:</strong> I transitioned the system from a Linear Search approach to a <strong>Binary Search Algorithm</strong> paired with a Sorting Algorithm. This addressed performance bottlenecks that occur as datasets scale from 10 to 10,000+ entries.</p>
+    <p><a href="https://github.com/ErwingAugustin/my-portfolio-project/blob/main/Enhanced_Artifact:%20ContactService.java">View Code</a></p>
+</div>
+
+<div id="databases" class="content-box">
+    <h2>Artifact 3: Databases</h2>
+    <h3>Inventory Management (SQLite)</h3>
+    <p><strong>Description:</strong> A mobile inventory helper designed to track quantities and set low-stock thresholds.</p>
+    <p><strong>Enhancement:</strong> I implemented UNIQUE, NOT NULL, and CHECK constraints for data integrity and transitioned to <strong>parameterized methods</strong> to protect against SQL injection attacks.</p>
+    
+    <div class="reflection-note">
+        <strong>Professional Reflection:</strong> During this enhancement, I faced significant disk space issues while working with Unreal Engine. This forced me to reconstruct logic manually from documentation and screenshots, proving the value of maintaining clean, modular code.
+    </div>
+</div>
 
 </body>
 </html>
