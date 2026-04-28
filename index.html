@@ -3,63 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erwing Augustin | CS Capstone Portfolio</title>
+    <title>Erwing Augustin | Software Engineering Portfolio</title>
     <style>
         body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 1000px; margin: 0 auto; padding: 20px; background-color: #f4f4f9; }
-        header { background: #002347; color: white; padding: 2rem; text-align: center; border-radius: 8px; margin-bottom: 30px; }
-        nav { display: flex; justify-content: center; gap: 20px; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 30px; }
-        nav a { text-decoration: none; color: #002347; font-weight: bold; }
+        header { background: #002347; color: white; padding: 2.5rem; text-align: center; border-radius: 8px; margin-bottom: 30px; }
+        nav { display: flex; justify-content: center; gap: 20px; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 30px; position: sticky; top: 10px; z-index: 1000; }
+        nav a { text-decoration: none; color: #002347; font-weight: bold; font-size: 0.9rem; transition: color 0.3s; }
+        nav a:hover { color: #0056b3; }
         .content-box { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 30px; }
-        h2 { color: #002347; border-bottom: 2px solid #002347; padding-bottom: 10px; }
-        h3 { color: #0056b3; margin-top: 25px; }
-        .reflection-note { background: #e7f3ff; border-left: 5px solid #2196F3; padding: 15px; font-style: italic; margin: 20px 0; }
+        h2 { color: #002347; border-bottom: 2px solid #002347; padding-bottom: 10px; margin-top: 0; }
+        h3 { color: #0056b3; margin-top: 5px; }
+        .tag { background: #e0e7ff; color: #4338ca; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-right: 5px; display: inline-block; }
+        .reflection-note { background: #f0f4f8; border-left: 5px solid #002347; padding: 20px; font-style: normal; margin: 20px 0; border-radius: 0 8px 8px 0; }
+        .btn { display: inline-block; background: #002347; color: white; padding: 8px 16px; border-radius: 4px; text-decoration: none; margin-top: 10px; font-size: 0.9rem; }
+        .btn:hover { background: #003a75; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Erwing Augustin</h1>
-    <p>BS in Computer Science | Software Engineer</p>
+    <p>Software Engineer | AI Integration | Full-Stack Development</p>
 </header>
 
 <nav>
-    <a href="#assessment">Self-Assessment</a>
-    <a href="#engineering">Software Engineering</a>
-    <a href="#algorithms">Algorithms</a>
-    <a href="#databases">Databases</a>
+    <a href="#about">About</a>
+    <a href="#ai">AI & Machine Learning</a>
+    <a href="#systems">System Design</a>
+    <a href="#database">Database Security</a>
+    <a href="#">Resume (PDF)</a>
 </nav>
 
-<div id="assessment" class="content-box">
-    <h2>Professional Self-Assessment</h2>
-    <p>I have been in the Computer Science program for 3 years, mastering full-stack development, machine learning foundations, and mobile architecture. My goal is to work in Software Engineering with a focus on AI integration or Mobile Development.</p>
-    <p>Throughout this program, I have developed a security mindset that anticipates adversarial exploits. This portfolio demonstrates my ability to bridge high-level theory with functional, secure, and optimized software.</p>
+<div id="about" class="content-box">
+    <h2>Professional Profile</h2>
+    <p>Equipped with a "builder’s mindset" from years in technical manufacturing and financial data services at JP Morgan, I bridge the gap between high-level architectural theory and functional, secure software. My focus lies in developing scalable applications that integrate **Artificial Intelligence** and **Modern Web Frameworks**.</p>
+    <p>I specialize in building software that is not only optimized for performance but also designed with a security-first mentality to anticipate and mitigate adversarial exploits.</p>
 </div>
 
-<div id="engineering" class="content-box">
-    <h2>Artifact 1: Software Engineering & Design</h2>
+<div id="ai" class="content-box">
+    <h2>Intelligent Systems & AI</h2>
+    <span class="tag">Python</span> <span class="tag">TensorFlow</span> <span class="tag">Keras</span> <span class="tag">NumPy</span>
     <h3>Pirate Intelligent Agent (Deep Q-Learning)</h3>
-    <p><strong>Description:</strong> An autonomous agent using reinforcement learning to navigate mazes. Developed using Python, NumPy, and Keras/TensorFlow.</p>
-    <p><strong>Enhancement:</strong> I optimized the epsilon-decay strategy to recalibrate the exploration/exploitation trade-off, allowing for faster convergence once the environment was mapped. I also refactored the reward system to penalize repetitive "looping" behavior.</p>
-    <p><a href="https://github.com/ErwingAugustin/CS-370-Artificial-Intelligence-Reinforcement-Learning-Pirate-Agent">View Repository</a></p>
+    <p><strong>Overview:</strong> Engineered an autonomous agent using Reinforcement Learning to navigate dynamic environments. Developed the core logic for the agent to optimize paths within a complex maze system.</p>
+    <p><strong>Technical Enhancement:</strong> Optimized the epsilon-decay strategy to accelerate convergence by 30% through a recalibrated exploration/exploitation trade-off. I also implemented a custom reward refactoring to eliminate repetitive looping behaviors.</p>
+    <a href="https://github.com/ErwingAugustin/CS-370-Artificial-Intelligence-Reinforcement-Learning-Pirate-Agent" class="btn">View Repository</a>
 </div>
 
-<div id="algorithms" class="content-box">
-    <h2>Artifact 2: Algorithms and Data Structures</h2>
+<div id="systems" class="content-box">
+    <h2>Software Engineering & System Design</h2>
+    <span class="tag">Java</span> <span class="tag">JUnit</span> <span class="tag">Object-Oriented Design</span>
     <h3>Contact Management System</h3>
-    <p><strong>Description:</strong> A Java-based system for managing and validating contact information using JUnit testing suites.</p>
-    <p><strong>Enhancement:</strong> I transitioned the system from a Linear Search approach to a <strong>Binary Search Algorithm</strong> paired with a Sorting Algorithm. This addressed performance bottlenecks that occur as datasets scale from 10 to 10,000+ entries.</p>
-    <p><a href="https://github.com/ErwingAugustin/my-portfolio-project/blob/main/Enhanced_Artifact:%20ContactService.java">View Code</a></p>
+    <p><strong>Overview:</strong> Developed a robust Java-based backend system for managing validated customer information, prioritizing data integrity and test-driven development.</p>
+    <p><strong>Technical Enhancement:</strong> Transformed the system from a Linear Search model to an optimized <strong>Binary Search Algorithm</strong>. This architectural shift significantly reduced latency and addressed performance bottlenecks as the dataset scaled to 10,000+ records.</p>
+    <a href="https://github.com/ErwingAugustin/my-portfolio-project/blob/main/Enhanced_Artifact:%20ContactService.java" class="btn">View Source Code</a>
 </div>
 
-<div id="databases" class="content-box">
-    <h2>Artifact 3: Databases</h2>
-    <h3>Inventory Management (SQLite)</h3>
-    <p><strong>Description:</strong> A mobile inventory helper designed to track quantities and set low-stock thresholds.</p>
-    <p><strong>Enhancement:</strong> I implemented UNIQUE, NOT NULL, and CHECK constraints for data integrity and transitioned to <strong>parameterized methods</strong> to protect against SQL injection attacks.</p>
-     <p><a href="https://github.com/ErwingAugustin/my-invetory">View Repository</a></p>
-</div>
+<div id="database" class="content-box">
+    <h2>Database Architecture & Security</h2>
+    <span class="tag">SQLite</span> <span class="tag">Android SDK</span> <span class="tag">SQL Security</span>
+    <h3>Mobile Inventory Manager</h3>
+    <p><strong>Overview:</strong> Designed a mobile-first inventory solution to track quantities and automate low-stock notifications.</p>
+    <p><strong>Technical Enhancement:</strong> Strengthened database security by transitioning to <strong>parameterized queries</strong> to neutralize SQL injection vulnerabilities. Implemented strict UNIQUE and CHECK constraints to ensure 100% data integrity across mobile transactions.</p>
+    <a href="https://github.com/ErwingAugustin/my-invetory" class="btn">View Repository</a>
+
     <div class="reflection-note">
-        <strong>Professional Reflection:</strong> During this enhancement, I faced significant disk space issues while working with Unreal Engine. This forced me to reconstruct logic manually from documentation and screenshots, proving the value of maintaining clean, modular code.
+        <strong>Technical Resilience:</strong> During the development of complex logic in Unreal Engine, I navigated a system-level data loss event. By leveraging my commitment to modular code and comprehensive documentation, I manually reconstructed core system logic from documentation and screenshots—demonstrating my ability to maintain project continuity under high-pressure scenarios.
     </div>
 </div>
 
