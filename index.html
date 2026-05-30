@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erwing Augustin | Software Engineering Portfolio</title>
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 1000px; margin: 0 auto; padding: 20px; background-color: #f4f4f9; }
-        header { background: #002347; color: white; padding: 2.5rem; text-align: center; border-radius: 8px; margin-bottom: 30px; }
-        nav { display: flex; justify-content: center; gap: 15px; background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 30px; position: sticky; top: 10px; z-index: 1000; flex-wrap: wrap; }
-        nav a { text-decoration: none; color: #002347; font-weight: bold; font-size: 0.9rem; transition: color 0.3s; }
-        nav a:hover { color: #0056b3; }
-        .content-box { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 30px; }
-        h2 { color: #002347; border-bottom: 2px solid #002347; padding-bottom: 10px; margin-top: 0; }
-        h3 { color: #0056b3; margin-top: 10px; margin-bottom: 5px; }
-        .tag { background: #e0e7ff; color: #4338ca; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-right: 5px; margin-bottom: 5px; display: inline-block; }
-        .reflection-note { background: #f0f4f8; border-left: 5px solid #002347; padding: 20px; font-style: normal; margin: 20px 0; border-radius: 0 8px 8px 0; }
-        .btn { display: inline-block; background: #002347; color: white; padding: 8px 16px; border-radius: 4px; text-decoration: none; margin-top: 15px; font-size: 0.9rem; }
-        .btn:hover { background: #003a75; }
-        .btn-alt { background: #4338ca; margin-right: 10px; }
-        .btn-alt:hover { background: #3730a3; }
-        hr { border: 0; border-top: 1px solid #eee; margin: 25px 0; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #1a1a1a; max-width: 1000px; margin: 0 auto; padding: 20px; background-color: #111111; }
+        header { background: #8b0000; color: white; padding: 2.5rem; text-align: center; border-radius: 8px; margin-bottom: 30px; border-bottom: 4px solid #ff1a1a; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+        header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px; }
+        header p { margin: 10px 0 0 0; color: #f3f4f6; font-size: 1.1rem; }
+        nav { display: flex; justify-content: center; gap: 15px; background: #1a1a1a; padding: 15px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); margin-bottom: 30px; position: sticky; top: 10px; z-index: 1000; flex-wrap: wrap; border: 1px solid #333; }
+        nav a { text-decoration: none; color: #ffffff; font-weight: bold; font-size: 0.9rem; transition: color 0.3s, border-bottom: 0.3s; padding: 5px 10px; }
+        nav a:hover { color: #ff3333; }
+        .content-box { background: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.4); margin-bottom: 30px; border-left: 4px solid #8b0000; }
+        h2 { color: #111111; border-bottom: 2px solid #8b0000; padding-bottom: 10px; margin-top: 0; font-size: 1.6rem; }
+        h3 { color: #8b0000; margin-top: 15px; margin-bottom: 5px; font-size: 1.25rem; }
+        .tag { background: #262626; color: #ff4d4d; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; margin-right: 5px; margin-bottom: 5px; display: inline-block; border: 1px solid #404040; }
+        .reflection-note { background: #1a1a1a; color: #ffffff; border-left: 5px solid #ff1a1a; padding: 20px; font-style: normal; margin: 20px 0; border-radius: 0 8px 8px 0; box-shadow: inset 0 0 10px rgba(0,0,0,0.5); }
+        .reflection-note strong { color: #ff4d4d; }
+        .btn { display: inline-block; background: #111111; color: white; padding: 8px 16px; border-radius: 4px; text-decoration: none; margin-top: 15px; font-size: 0.9rem; font-weight: bold; border: 1px solid #333; transition: all 0.3s ease; }
+        .btn:hover { background: #8b0000; border-color: #ff1a1a; box-shadow: 0 0 8px rgba(255, 26, 26, 0.4); }
+        .btn-alt { background: #8b0000; border: 1px solid #b30000; margin-right: 10px; }
+        .btn-alt:hover { background: #ff1a1a; border-color: #ff4d4d; }
+        hr { border: 0; border-top: 1px solid #e5e7eb; margin: 25px 0; }
         .doc-links { margin-bottom: 20px; padding: 15px; background: #f8fafc; border-radius: 6px; border: 1px dashed #cbd5e1; }
     </style>
 </head>
@@ -44,14 +47,14 @@
     <h2>Professional Profile</h2>
     
     <div class="doc-links">
-        <strong>Quick Access:</strong> 
+        <span>Quick Access:</span> 
         <a href="Resume1.pdf" class="btn btn-alt" target="_blank">Download Resume</a>
         <a href="Cover%20Letter.pdf" class="btn btn-alt" target="_blank">Download Cover Letter</a>
     </div>
 
-    <p>Equipped with a <strong>"builder’s mindset"</strong> honed through professional experience in technical manufacturing and financial data services at JP Morgan, I bridge the gap between high-level architectural design and functional, user-centric software. I bring a unique blend of analytical precision and hands-on problem solving to the development of intelligent, scalable solutions.</p>
+    <p>Equipped with a builder mindset honed through professional experience in technical manufacturing and financial data services at JP Morgan, I bridge the gap between high-level architectural design and functional, user-centric software. I bring a unique blend of analytical precision and hands-on problem solving to the development of intelligent, scalable solutions.</p>
     
-    <p>My technical foundation spans <strong>Full-Stack Development</strong>, <strong>Artificial Intelligence</strong>, and <strong>Game Engineering</strong>. I specialize in implementing complex algorithms to solve dynamic problems, from deep Q-learning agents to high-performance C++ systems in Unreal Engine. I am driven by the discipline to see a project through from initial concept to a polished, high-performance final product.</p>
+    <p>My technical foundation spans Full-Stack Development, Artificial Intelligence, and Game Engineering. I specialize in implementing complex algorithms to solve dynamic problems, from deep Q-learning agents to high-performance C++ systems in Unreal Engine. I am driven by the discipline to see a project through from initial concept to a polished, high-performance final product.</p>
 </div>
 
 <div id="ai" class="content-box">
@@ -76,7 +79,7 @@
     <span class="tag">Java</span> <span class="tag">JUnit</span> <span class="tag">Search Optimization</span>
     <h3>Contact Management System</h3>
     <p><strong>Overview:</strong> Developed a robust Java backend for managing validated customer information, prioritizing data integrity and Test-Driven Development (TDD).</p>
-    <p><strong>Technical Enhancement:</strong> Refactored the search architecture from a Linear Search to a **Binary Search Algorithm**, improving efficiency from O(n) to O(log n) and resolving performance bottlenecks for large-scale datasets.</p>
+    <p><strong>Technical Enhancement:</strong> Refactored the search architecture from a Linear Search to a Binary Search Algorithm, improving efficiency from O(n) to O(log n) and resolving performance bottlenecks for large-scale datasets.</p>
     <a href="https://github.com/ErwingAugustin/my-portfolio-project/blob/main/Enhanced_Artifact:%20ContactService.java" class="btn">View Java Source Code</a>
 </div>
 
@@ -87,6 +90,14 @@
     <p><strong>Overview:</strong> Engineered a high-performance 3D combat environment featuring intelligent enemy AI and dynamic gameplay mechanics in Unreal Engine 5.</p>
     <p><strong>Technical Contribution:</strong> Programmed adversarial AI using Behavior Trees and Blackboard components for real-time tactical movement. Developed custom C++ classes for player mechanics, including movement components, speed-boost power-ups, and a robust real-time scoring system.</p>
     <a href="https://github.com/ErwingAugustin/ArenaShooter_Final" class="btn">View Project Repository</a>
+
+    <hr>
+
+    <span class="tag">Python</span> <span class="tag">Data Structures</span> <span class="tag">State Evaluation</span>
+    <h3>Fear the Cat Lady Text Adventure</h3>
+    <p><strong>Overview:</strong> Developed an interactive command-line scripting game evaluating structural tracking and user inventory state progression across an interconnected map registry.</p>
+    <p><strong>Technical Contribution:</strong> Modeled environmental navigation mechanics using multi-layered python dictionaries to establish positional data routes. Integrated sanitation methods to safeguard runtime parsing loops from input casing variances while implementing live property removal to govern game item collection integrity.</p>
+    <a href="https://github.com/ErwingAugustin/Fear-The-Cat-Lady-Python" class="btn">View Game Repository</a>
 </div>
 
 <div id="fullstack" class="content-box">
@@ -112,7 +123,7 @@
     <span class="tag">SQLite</span> <span class="tag">Android SDK</span> <span class="tag">SQL Security</span>
     <h3>Mobile Inventory Manager</h3>
     <p><strong>Overview:</strong> Developed a mobile-first inventory application focused on secure data persistence and automated stock alerts.</p>
-    <p><strong>Technical Enhancement:</strong> Implemented **parameterized queries** to protect against SQL injection and enforced NOT NULL/CHECK constraints to ensure 100% data integrity.</p>
+    <p><strong>Technical Enhancement:</strong> Implemented parameterized queries to protect against SQL injection and enforced NOT NULL/CHECK constraints to ensure 100% data integrity.</p>
     <a href="https://github.com/ErwingAugustin/my-invetory" class="btn">View Repository</a>
 
     <div class="reflection-note">
